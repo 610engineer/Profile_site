@@ -1,0 +1,602 @@
+@charset"UTF-8";
+
+/*
+tehem name:my theme
+author:masaa-info
+description: this is my original theme
+version:1.0
+*/
+
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+/*Rset CSS*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+
+html{
+    overflow-y:scroll;
+}
+
+
+/*Containts*/
+body{
+    font-family:'メイリオ',
+    'hiragino kaku Gothic Pro',sans-serif;
+    margin:0px;
+}
+
+ul{
+    list-style: none;
+}
+/*****************/
+
+
+/*top image*/
+.pc{
+    display:none;
+}
+
+header{
+    margin-bottom:40px;
+    color:black;
+}
+
+header a{
+    color:black;
+    text-decoration:none;
+}
+
+.container{
+    max-width:650px;
+    margin-right:auto;
+    margin-left:auto;  
+}
+
+
+article h1{
+    margin:0;
+    font-size:32px;
+    font-weight:normal;
+}
+
+article h1 a{
+    color:#000000;
+    text-decoration:none;
+}
+
+.postinfo{
+    margin-top: 16px;
+    font-size:16px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.postinfo a{
+    color:black;
+    
+}
+
+.postinfo p{
+    margin-top:16px;
+}
+
+
+
+.postinfo i{
+    color:#888888
+}
+
+.pagenav a{
+    padding:5px 10px;
+    border-radius:7px;
+    color:#666666;
+    font-size:12px;
+
+}
+
+.pagenav{
+    text-align: center;
+    overflow:hidden;
+    margin-top:40px;
+    margin-bottom:40px;
+
+
+}
+
+.siteinfo{
+    padding-top:20px;
+    padding-left:16px;
+    padding-bottom:10px;
+    background-color:#ffffff;
+    color:#4a5f7e; 
+    font-size:32px   
+}
+
+.siteinfo a{
+    color:#4a5f7e;
+}
+
+.siteinfo p{
+    margin:0;
+    font-size:12;
+    padding-top:5px;
+    padding-left:5px;
+    align-self:flex-end;
+}
+
+header img{
+    width:100%;
+    height:auto; 
+    vertical-align:bottom;   
+}
+/*****************************/
+
+/*navigation menu*/
+nav ul{
+    list-style:none;
+    margin:0;
+    padding:0;
+    padding-bottom:24px;
+    font-size:32px;
+    display:flex;
+    justify-content:center;
+}
+
+nav li{
+    margin:16 8 0 8;
+    border-bottom:solid 3px transparent;
+}
+
+nav li a{
+    text-decoration:none;
+}
+
+nav li:hover {
+    border-bottom:solid 3px gray;
+}
+
+nav li.current-menu-item {
+    border-bottom-color:#e6cc1c;
+}
+/*********************************/
+
+
+
+/*footer*/
+
+footer .container h3{
+    margin-top:16px;
+    text-align:right;
+    font-weight:normal
+}
+/***********/
+
+
+/*blog page*/
+
+
+.b_contents_list .contents article{
+    border:1px solid #888888;
+    padding-bottom: 40px;
+    border-radius: 8px;
+    height: 300px;
+    margin:0 16px 16px 16px;
+    padding:16px 16px 0 16px; 
+}
+
+article h1{
+    margin-bottom:16px;
+}
+
+/**********************************/
+
+/*menu*/
+.blogmenu ul{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+
+.blogmenu .widget{
+    margin-bottom:30px;
+    padding:20px;
+    background-color:#e8e8e8;
+}
+
+.blogmenu .widgettitle{
+    margin-top:10px;
+    margin-bottom:20px;
+    border-right:solid 10px #4a5f7e;
+    color:#4a5f7e;
+    font-size:14px;
+}
+
+.blogmenu li a{
+    color:#666666;
+    font-size:14px;
+    text-decoration:none;
+    display:block;
+    padding:10px 5px;
+}
+
+.blogmenu li a:hover{
+    background-color:#ffffff;
+}
+/*****************************/
+
+/*About*/
+
+.about h1{
+    font-size:32px;
+    margin-bottom:8px;
+    text-align:center;
+    font-weight:normal;
+}
+
+.profile{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.profile ul{
+    margin-block-start:0;
+    padding-top:8px;
+    padding-bottom:0px;  
+}
+
+.profile ul h2{
+    padding:8 0 0 0;
+}
+
+.history{
+    padding:40 0 56 0;
+    text-align:center;
+}
+
+.history h2{
+    font-weight:normal;
+    font-size:24px;
+}
+
+.history h3{
+    padding-top:16px;
+}
+
+
+/*comment form*/
+.wpcf7 input, 
+.wpcf7 textarea{
+    width: 100%;
+    padding:5px;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+}
+.wpcf7 input[type="submit"]{
+    width:200px;
+    padding:10px;
+    border:none;
+    background-color:#e6cc1c;
+    -webkit-apprearance:none;
+    cursor:pointer;
+}
+
+.wpcf7 input[type="submit"]:hover{
+    background-color:#ffaa00;
+}
+
+.wpcf7 p{
+    margin:15px 0px 15px 0px;
+}
+/******************************/
+
+
+/*top page*/
+.topmenu{
+    padding-bottom:40px;
+}
+
+
+.front h2{
+    font-size:24px;
+    text-align:center;
+    margin-bottom:8px;
+    font-weight:normal;
+}
+
+.largeheader{
+    width:100%;
+    height:auto;
+    
+}
+
+.home header{
+    margin-bottom:0;
+}
+
+.home footer{
+    margin-top:0;
+}
+
+
+.skill{
+    margin-bottom:15px;
+    color:#aaaaaa;
+    font-size:20px;
+    text-decoration:none;
+}
+
+.skill p{
+    text-align:center;
+}
+
+
+
+.skill i{
+    display:block;
+    margin:20 0 10 0;
+       
+}
+/**********************/
+
+
+
+
+/*Responsive 750px mobile first*/
+
+@media screen and (min-width:768px){
+.container{
+    max-width:1000px;
+}
+
+.siteinfo{ 
+    font-size:54px;   
+}
+/*header navigation*/
+nav ul{
+    list-style:none;
+    margin:0;
+    padding:0;
+    padding-bottom:24px;
+    font-size:24px;
+    overflow:hidden;
+    display:flex;
+    justify-content:flex-end;   
+}
+
+nav li{
+    margin:16 4 0 4;
+    border-bottom:solid 3px transparent;
+}
+
+.sp{
+    display:none;
+}
+.pc{
+    display:inline;
+}
+/**********************/
+
+/*front-page*/
+.skills{
+    display:flex;
+    justify-content:center;
+}
+
+.skill{
+    padding:0 32 0 32;
+}
+
+.about h1{
+    font-size:40px;
+    margin:0 0 24 0;
+    text-align:left;
+    font-weight:normal;
+}
+
+.profile{
+    display:flex;
+    flex-direction:row;
+    text-align:left;
+    margin:8px 0 24 0;
+}
+
+.profile ul{
+    margin-block-start:0;
+    padding-top:0px;
+    padding-bottom:0px;
+    padding-left:24px;   
+}
+
+.profile ul h2{
+    padding-top:0 0 0 0;
+}
+
+.history{
+    text-align:left;
+}
+.history h2{
+    font-weight:normal;
+    font-size:24px;
+}
+
+.front h2{
+    font-size:24px;
+    text-align:left;
+    margin-bottom:8px;
+    font-weight:normal;
+}
+
+.skills{
+    display:flex;
+    justify-content:flex-start;
+}
+
+.skill{
+    padding:0 64 0 0;
+}
+
+
+/**********************/
+
+/*blog menu*/
+
+.two-line{
+    display:flex;
+    flex-direction: row;
+}
+.b_contents{
+   margin-right:16px;
+   width:70%;
+}
+
+.b_contents_list{
+    width:70%;
+}
+
+.b_contents_list .contents{
+    display: flex;
+    align-content: flex-start;
+    justify-content: center;
+    flex-wrap:wrap; 
+}
+
+.b_contents_list .contents article{
+    border:1px solid #888888;
+    padding-bottom: 40px;
+    border-radius: 8px;
+    width:300px;
+    height: 300px;
+    margin:0 16px 16px 0;
+    
+}
+
+
+
+
+
+.blogmenu{
+    width:30%;
+}
+
+/*footer*/
+footer nav ul{
+    list-style:none;
+    margin:0;
+    padding:0;
+    font-size:16px;
+    overflow:hidden;
+    display:flex;
+    justify-content:center;   
+}
+
+nav li{
+    margin:16 8 0 8;
+    border-bottom:solid 3px transparent;
+}
+}
+
+/*******************************/
+
+
