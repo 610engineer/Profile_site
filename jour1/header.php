@@ -5,6 +5,7 @@
     <title><?php bloginfo('name');?><?php wp_title();?></title>
         <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet" media="screen">
+    <link rel="shortcut icon" href="https://jour-1.com/wp-content/uploads/2020/09/favicon.ico">
     <link rel="stylesheet"
      href="<?php echo get_stylesheet_uri();?>">
      <script src="https://kit.fontawesome.com/ac61a06d80.js" crossorigin="anonymous"></script>
@@ -24,4 +25,5 @@
             <?php wp_nav_menu('theme_location=navigation');?>
         </div>
     </nav>
+    
 </header>
