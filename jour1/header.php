@@ -10,12 +10,13 @@
      href="<?php echo get_stylesheet_uri();?>">
      <script src="https://kit.fontawesome.com/ac61a06d80.js" crossorigin="anonymous"></script>
      <?php wp_head();?>
+     
 </head>
 <body <?php body_class();?>>
 <header>
     <div class="siteinfo">
         <div class="container">
-            <h1><a href="<?php echo home_url(); ?>"><?php bloginfo('name');?></a></h1>
+            <h1><a href="<?php echo home_url(); ?>"><img src="https://jour-1.com/wp-content/uploads/2020/09/image1.jpeg" alt="" ></a></h1>
         </div>
     </div>
         <img src="<?php echo get_template_directory_uri(); ?>/header_jour1.jpg" alt="" class="sp">

@@ -130,6 +130,27 @@ ul{
 }
 /*****************/
 
+/*Start anmation*/
+.start{
+    background:#fff;
+    Position:fixed;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    z-index: 999;
+}
+
+.start p{
+    position:fixed;
+    left:50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    z-index: 9999;
+    width:280px;
+}
+
 
 /*top image*/
 .pc{
@@ -149,7 +170,8 @@ header a{
 .container{
     max-width:650px;
     margin-right:auto;
-    margin-left:auto;  
+    margin-left:auto;
+      
 }
 
 
@@ -205,12 +227,11 @@ article h1 a{
 }
 
 .siteinfo{
-    padding-top:20px;
     padding-left:16px;
-    padding-bottom:10px;
     background-color:#ffffff;
     color:#4a5f7e; 
-    font-size:32px   
+    font-size:32px;
+       
 }
 
 .siteinfo a{
@@ -229,6 +250,11 @@ header img{
     width:100%;
     height:auto; 
     vertical-align:bottom;   
+}
+
+header .container img{
+    width:auto;
+    height:50px;
 }
 /*****************************/
 
@@ -450,8 +476,9 @@ article h1{
     max-width:1000px;
 }
 
-.siteinfo{ 
-    font-size:54px;   
+header .container img{
+    width:auto;
+    height:100px;
 }
 /*header navigation*/
 nav ul{
